@@ -1,0 +1,115 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin:0;
+  padding:0;
+  font-family: sans-serif;
+  background-color: #46529d;
+  color:#fff;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.container{
+  width:60%;
+  margin:10% auto;
+}
+
+.ListItem{
+  background-color: #fff;
+  color:#46529d;
+}
+
+.ListItem p{
+  margin:0;
+  padding:0;
+  text-align: center;
+  padding:10px 0px;
+}
+.ListItem span{
+  display: inline-block;
+  text-align: center;
+  padding:10 0;
+  font-size: 20px;
+  border: 0.3px solid #ccc;
+}
+.ListItem span.title{
+  background-color: #2ebaee;
+  color:#fff;
+}
+.ListItem span.name,
+form input[id="name"] {
+  width:60%;
+}
+
+.ListItem span.age,
+form input[id="age"]{
+width:30%;
+}
+
+.ListItem span.action,
+form input[type="submit"]{
+  width:10%;
+}
+
+.ListItem span.icon{
+  color:red;
+  cursor: pointer;
+}
+form{
+  width: 100%;
+}
+form input {
+  padding:10px;
+  background-color: #ebebeb;
+  border:.3px solid #ccc;
+}
+
+form input[type=submit]{
+  width: 10%;
+    background: #23baee;
+  border:0.3px solid #2ebaee;
+  color:#fff;
+  cursor: pointer;
+}
+
+@media (max-width: 991.98px) {
+  .container {
+      width: 80%;
+  }
+  .ListItem p{
+  padding: 5px 0px;
+  }
+  .ListItem span{
+    font-size: 15px;
+  }
+    .ListItem span.name,
+    form input[id="name"] {
+      width: 50%;
+    }
+  
+    .ListItem span.age,
+    form input[id="age"] {
+      width: 30%;
+    }
+  
+    .ListItem span.action,
+    form input[type="submit"] {
+      width: 20%;
+    }
+}
+@media (max-width: 575.98px) {
+  .container {
+      width: 95%;
+      font-size: 10px;
+    }
+      form input{
+      font-size: 10px;
+      text-align: left;
+      padding: 4px;
+      }
+}
